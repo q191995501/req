@@ -695,3 +695,7 @@ func Patch(url string, v ...interface{}) (*Resp, error) {
 func Do(method, url string, v ...interface{}) (*Resp, error) {
 	return std.Do(method, url, v...)
 }
+
+func ChromeUA() string {
+	return "Mozilla/4.0 (compatible; U; x64; en-US) AppleWebKit/576 (KHTML, like Gecko) Chrome/23.1106.185"
+}
